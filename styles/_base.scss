@@ -1,0 +1,454 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  // border: solid 2px red;
+}
+
+html {
+  // font-size: 62.5%;
+  font-size: 58%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 62.5em) {
+    // font-size: 56.25%;
+    font-size: 51.25%;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    // font-size: 54%;
+    font-size: 49%;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    // font-size: 51%;
+    font-size: 46%;
+  }
+
+  @media only screen and (min-width: 140.5em) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  // background: linear-gradient(115deg, #1a1e2b, #10101a, #1a1e2b, #10101a);
+  // background: #348664;
+
+
+  // background: #ff00cc;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%),  url(https://grainy-gradients.vercel.app/noise.svg);
+  
+  background-size: 400% 400%;
+  // animation: gradient 3s ease-in-out infinite alternate;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+}
+
+// cursor
+.cursor {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  pointer-events: none;
+  transition: left top 0.1s ease-in-out;
+  z-index: 1233333;
+  background-image: url("../public/svg/cursor.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: cursorAnim 10s infinite linear;
+
+  @media only screen and (max-width: 52.5em) {
+    opacity: 0;
+  }
+}
+
+// preloader
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3003ac;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 129993994;
+  display: grid;
+  place-content: center;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__left {
+    margin-right: 1rem;
+  }
+
+  &__right {
+    margin-left: 1rem;
+    width: max-content;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        #3003ac 5%,
+        rgba(#3003ac, 0) 30%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(
+        to top,
+        #3003ac 5%,
+        rgba(#3003ac, 0) 30%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    font-family: $font-tertiary;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 210%;
+    letter-spacing: 0.19em;
+    color: var(--color-white);
+    animation: preloaderTextAnim 12s linear;
+    animation-delay: 3s;
+  }
+}
+
+/*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+[data-scroll-direction="horizontal"] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  transform: scaleY(1);
+}
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+  transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
+}
+
+
+// form elements
+
+/* Colors */
+$projectRed: #ec5f67;
+$projectOrange: #f99157;
+$projectYellow: #fac863;
+$projectGreen: #99c794;
+$projectBlueGreen: #5fb3b3;
+$projectBlue: #6699cc;
+$projectViolet: #c594c5;
+$projectBrown: #ab7967;
+
+/* Greys */
+$projectGrey8: #1b2b34;
+$projectGrey7: #343d46;
+$projectGrey6: #4f5b66;
+$projectGrey5: #65737e;
+$projectGrey4: #a7adba;
+$projectGrey3: #c0c5ce;
+$projectGrey2: #cdd3de;
+$projectGrey1: #d8dee9;
+
+
+form {
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+button {
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: 0.3s ease all;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.group input {
+  display: block;
+  margin: 10px auto;
+  background-color: transparent;
+  padding: 10px 5px;
+  width: 98%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: transparent;
+  font-size: 2em;
+  font-weight: 600;
+}
+.group input:not(:-moz-placeholder-shown) {
+  color: #d8dee9;
+}
+.group input:not(:-ms-input-placeholder) {
+  color: #d8dee9;
+}
+.group input:focus, .group input:not(:placeholder-shown) {
+  color:  #d8dee9;
+}
+.group input::-webkit-input-placeholder {
+  color: #d8dee9;
+}
+.group input:-moz-placeholder {
+  color: #d8dee9;
+}
+.group input::-moz-placeholder {
+  color: #d8dee9;
+}
+.group input:-ms-input-placeholder {
+  color: #d8dee9;
+}
+.group label {
+  font-family: $font-secondary;
+  color: #d8dee9;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  margin-top: 5px;
+  transition: 0.3s ease all;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.group input:not(:-moz-placeholder-shown) ~ label {
+  top: -15px;
+  transform-origin: left center;
+  transform: scale(0.6);
+}
+.group input:not(:-ms-input-placeholder) ~ label {
+  top: -15px;
+  transform-origin: left center;
+  transform: scale(0.6);
+}
+.group input:focus-within ~ label, .group input:not(:placeholder-shown) ~ label {
+  top: -15px;
+  transform-origin: left center;
+  transform: scale(0.6);
+}
+.group .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.group .bar:before, .group .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 10px;
+  position: absolute;
+  background: var(--second-color);
+  transition: 0.3s ease all;
+}
+.group .bar:before {
+  left: 50%;
+}
+.group .bar:after {
+  right: 50%;
+}
+.group input:focus ~ .bar:before, .group input:focus ~ .bar:after {
+  width: 50%;
+}
+.group input:not(:-moz-placeholder-shown) ~ .bar:before, .group input:not(:-moz-placeholder-shown) ~ .bar:after {
+  width: 50%;
+}
+.group input:not(:-ms-input-placeholder) ~ .bar:before, .group input:not(:-ms-input-placeholder) ~ .bar:after {
+  width: 50%;
+}
+.group input:not(:placeholder-shown) ~ .bar:before, .group input:not(:placeholder-shown) ~ .bar:after {
+  width: 50%;
+}
+
+button {
+  color: #d8dee9;
+  width: 100%;
+  margin-top: 5px;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 1.6em;
+  border-radius: 50px;
+  background: var(--second-color);
+}
+button:hover {
+  transition: scale(0.9);
+}
+
+
+table{
+  width:100%;
+  table-layout: fixed;
+  
+
+
+  
+}
+.table-header{
+  background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ac27a5, #1c724a,); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 10px;
+  margin-top: 5px;
+ }
+
+.table-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #000000, #000000);
+  border-radius: 10px;
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 10px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+tr:nth-of-type(even) td{
+  background-color: lighten(#4c575694, 15%);
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+} 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
