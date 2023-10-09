@@ -698,18 +698,18 @@ const index: React.FC<indexProps> = ({}) => {
                 rel="noopener"
                 target="_blank"
               >
-                👾 E-mail
+                E-mail
               </a>
               <a
                 href="tel:+918383048570"
                 rel="noopener"
                 target="_blank"
               >
-                🐦 Call Us
+                Call Us
               </a>
               
               <a
-                href="https://www.instagram.com/"
+                href="/people"
                 rel="noopener"
                 target="_blank"
               >
