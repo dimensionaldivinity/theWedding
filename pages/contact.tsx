@@ -131,16 +131,13 @@ useEffect(() => {
 
     console.clear();
     console.log.apply(console, [
-      "%c Designed and Developed by Prasad %c %c🚀 %c\n",
+      "%c The answer is not 42 %c %c🚀 %c\n",
       "color: #fff; background: #8000ff; padding:5px 0;",
       "color: #fff; background: #242424; padding:5px 0 5px 5px;",
       "background: #242424; padding:5px 0",
       "background: #242424; padding:5px 5px 5px 0",
     ]);
-    console.log.apply(console, [
-      "%c Thanks for stopping by, I’m currently looking to a new team of creative designers and developers.\n",
-      "color: #fff; background: #8000ff; padding:5px 0;",
-    ]);
+   
   }, []);
 
   
@@ -314,7 +311,7 @@ useEffect(() => {
                 data-displacement="webp/myDistorsionImage.webp"
               >
                 <img src="webp/contact.webp" alt="Gardenia" />
-                <img src="webp/contact-2.webp" alt="Gardenia" />
+                <img src="webp/contact-1.webp" alt="Gardenia" />
               </div>
               <div className="project-card__right">
                 <h2
