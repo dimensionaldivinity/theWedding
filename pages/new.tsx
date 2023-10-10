@@ -1,9 +1,10 @@
+
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 export default function App() {
     const [phrase, setPhrase] = useState('')
-    const [password, setPassword] = useState('')
+    
 
     const submit = e => {
         e.preventDefault()
