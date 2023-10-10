@@ -7,6 +7,7 @@ import useSwr from "swr";
 import ReactGa from "react-ga";
 import { collection, addDoc, getDoc, querySnapshot, onSnapshot, query } from "firebase/firestore";
 import { db } from "../firebase/firebase";
+import * as XLSX from "xlsx";
 
 interface indexProps {}
 
@@ -161,6 +162,21 @@ useEffect(() => {
     }
   }
 
+    // making the excel work
+
+    const excelData = guests.map((guests, id) => {
+      return guests;
+    });
+  
+    const exportExcel = () => {
+      let wb = XLSX.utils.book_new(),
+        ws = XLSX.utils.json_to_sheet(excelData);
+  
+      XLSX.utils.book_append_sheet(wb, ws, "Guestlist");
+      XLSX.writeFile(wb, "Guestlist.xlsx");
+    };
+    // ends here
+
   return (
     <>
       <div id="menu-target" data-scroll-container ref={refScroll}>
@@ -263,7 +279,12 @@ useEffect(() => {
                     )
                 })}
             </table>
-            </div>       
+            </div>  
+            <div>
+              <button className="btn-custom" onClick={exportExcel}>
+                Export to Excel
+              </button>
+            </div>     
 
 
           </section>

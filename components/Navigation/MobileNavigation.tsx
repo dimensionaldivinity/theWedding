@@ -57,27 +57,62 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
               >
                 Invitation
               </a>
-              <a
-                href="/contact"
-                rel="noopener"
-                target="_blank"
-              >
-              Contact
-              </a>
-              
-              <a
+          </div>
+          <div className="navigation-top__left--links">
+          <a
                 href="tel:+918383048570"
                 rel="noopener"
                 target="_blank"
               >
-                Phone
+                Itenerary
               </a>
+
+          </div>
+          <div className="navigation-top__left--links">
+          <a
+                href="tel:+918383048570"
+                rel="noopener"
+                target="_blank"
+              >
+                Wardrobe Planner
+              </a>
+
+          </div>
+          <div className="navigation-top__left--links">
+          <a
+                href="tel:+918383048570"
+                rel="noopener"
+                target="_blank"
+              >
+                F.A.Qs
+              </a>
+
+          </div>
+          <div className="navigation-top__left--links">
+          <a
+                href="tel:+918383048570"
+                rel="noopener"
+                target="_blank"
+              >
+                Add Your Travel Details
+              </a>
+
+          </div>
+          <div className="navigation-top__left--links">
+          <a
+                href="tel:+918383048570"
+                rel="noopener"
+                target="_blank"
+              >
+                Add Your Travel Details
+              </a>
+
           </div>
         </div>
         <div className="navigation-top__right">
           <h4 className="navigation-h4">Tring to reach us?</h4>
           <a
-            href="mailto:lpwedding@gmail.com"
+            href="mailto:lmarriesp@gmail.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >

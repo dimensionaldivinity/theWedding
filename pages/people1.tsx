@@ -1,16 +1,24 @@
 // @ts-nocheck
+'use client';
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Navigation } from "../components/Navigation/Navigation";
 import useSwr from "swr";
 import ReactGa from "react-ga";
-import { collection, addDoc, onSnapshot, query } from "firebase/firestore";
+import { collection, addDoc, getDoc, querySnapshot, onSnapshot, query } from "firebase/firestore";
 import { db } from "../firebase/firebase";
+import { SessionProvider as Provider } from "next-auth/react";
+
 
 interface indexProps {}
 
-
+interface Ireply {
+  id: number;
+  name: string;
+  userName: string;
+  reply: string;
+}
 // db stuff
 // function Guestdb(){
 // const [guests, setGuests] = useState([
@@ -20,17 +28,23 @@ interface indexProps {}
 // };
 
 
+
+
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
 
 const hoverEffect =
   typeof window !== `undefined` ? require("hover-effect").default : null;
 
-
+const transition: { duration: number; ease: number[] } = {
+  duration: 1.4,
+  ease: [0.6, 0.01, -0.05, 0.9],
+};
 
 const fetcher = (url: any) => fetch(url).then((res) => res.json());
 
 const index: React.FC<indexProps> = ({}) => {
+  
   
   const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false);
 
@@ -131,13 +145,16 @@ useEffect(() => {
 
     console.clear();
     console.log.apply(console, [
-      "%c The answer is not 42 %c %c🚀 %c\n",
+      "%c Designed and Developed by Prasad %c %c🚀 %c\n",
       "color: #fff; background: #8000ff; padding:5px 0;",
       "color: #fff; background: #242424; padding:5px 0 5px 5px;",
       "background: #242424; padding:5px 0",
       "background: #242424; padding:5px 5px 5px 0",
     ]);
-   
+    console.log.apply(console, [
+      "%c Thanks for stopping by, I’m currently looking to a new team of creative designers and developers.\n",
+      "color: #fff; background: #8000ff; padding:5px 0;",
+    ]);
   }, []);
 
   
@@ -152,39 +169,34 @@ useEffect(() => {
 
   return (
     <>
+    <Provider>
       <div id="menu-target" data-scroll-container ref={refScroll}>
         <Head>
-        <link rel="icon" href="svg/favicon.svg" />
+          <link rel="icon" href="svg/favicon.svg" />
           <link href="https://dprasad.me/" rel="canonical" />
           <meta name="theme-color" content="#10101A" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="#10101A"
           />
-          <title>L+P Wedding website</title>
+          <title>Lavneeta + Prasad</title>
           <meta
             name="description"
-            content="L + P Wedding"
+            content="for the wedding"
           />
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="L+P Wedding website"
+            content="Prasad 🚀 &mdash; Frontend Devloper"
           />
-          <meta property="og:url" content="https://dprasad,em/" />
+          <meta property="og:url" content="https://dprasad.me/" />
           <meta property="og:image" content="webp/preview-image.png" />
           <meta
             property="og:description"
-            content="L + P Wedding"
+            content="for the wedding"
           />
-          <meta
-            name="twitter:title"
-            content="L+P Wedding website"
-          />
-          <meta
-            name="twitter:description"
-            content="This is for the wedding "
-          />
+          
+         
         </Head>
         
         <div className="cursor"></div>
@@ -192,218 +204,117 @@ useEffect(() => {
           isOpen={isToggleOpen}
           toggleOpen={() => toggleBodyScroll(isToggleOpen)}
         />
-        <div className="header-wrapper">
+        {/* <div className="header-wrapper">
           <header className="header">
             <div className="header__hero">
               <div className="header__hero--heading">
-                <span>Let us know your travel </span> <br />
-                <span>details for the </span>
+                
                 <span className="header__hero--heading-gradient">
-                  wedding.{" "}
+                  GUEST LIST{" "}
                 </span>
                 <br />
-                <span>See you soon</span>
+                <span> </span>
               </div>
-              {/* <a
-                data-scroll-to
-                className="header__hero--cta"
-                href="#sectionProjects"
-              >
-                VIEW PROJECTS
-              </a> */}
-            </div>
+              </div>
           </header>
           
-        </div>
+        </div> */}
         <main className="container">
           {/* <p className="about-text">
-            Hello stranger! 👋, welcome to the wedding
+            Hello stranger! 👋, we are geeting married
           </p> */}
           <section id="sectionProjects" className="section-projects">
             <h1 className="heading-1">
-              <span>to arrange commute</span> <small>💼</small>
+              <span> Hi! Baby, I LOVE YOU SOOO MCUH</span> <small>💼</small>
             </h1>
-            <p className="paragraph">
-              something
-            </p>
-
             
-            {/* scss form */}
-            <div>
-
-            <form action="">
-  <div className="group">
-    <input 
-    value={newGuest.gname}
-    onChange={(e) => setNewGuest({...newGuest, gname : e.target.value})}
-    type="text" className="name_hid" name="name" autocomplete="off" placeholder="" required></input>
-    <span class="bar"></span>
-    <label>Name*</label>
-  </div>
-  <div className="group">
-    <input 
-    value={newGuest.email}
-    onChange={(e) => setNewGuest({...newGuest, email : e.target.value})}
-    type="email" placeholder="-" name="email" autocomplete="off"></input>
-    <span className="bar"></span>
-    <label>Email</label>
-  </div>
-  <div className="group">
-    <input 
-    value={newGuest.phone}
-    onChange={(e) => setNewGuest({...newGuest, phone : e.target.value})} 
-    type="phone" name="phone" class="input--tel" autocomplete="off" placeholder="-" minlength="10" required></input>
-    <span className="bar"></span>
-    <label>Phone*</label>
-  </div>
-  <div className="group">
-    <input 
-    value={newGuest.date}
-    onChange={(e) => setNewGuest({...newGuest, date : e.target.value})} 
-    type="date" name="date" autocomplete="off"  placeholder="-"></input>
-    <span className="bar"></span>
-    <label>Date of Arrival</label>
-  </div>
-  <div className="group">
-    <input 
-    value={newGuest.flight}
-    onChange={(e) => setNewGuest({...newGuest, flight : e.target.value})} 
-    type="text" placeholder="-" name="flight" autocomplete="off"></input>
-    <span className="bar"></span>
-    <label>Flight/Train no.</label>
-  </div>
-  <div className="group">
-    <input 
-    value={newGuest.time}
-    onChange={(e) => setNewGuest({...newGuest, time : e.target.value})} 
-    type="time" placeholder="-" name="time" autocomplete="off"></input>
-    <span className="bar"></span>
-    <label>Estimated time of arrival</label>
-  </div>
-  
-  <div className="group">
-    <input 
-    value={newGuest.message}
-    onChange={(e) => setNewGuest({...newGuest, message : e.target.value})} 
-    type="message" placeholder="-" name="message" autocomplete="off"></input>
-    <span className="bar"></span>
-    <label>Anything else you wanna let us know?</label>
-  </div>
-  <button className="btn-custom" onClick={addGuest}>SUBMIT</button>
-</form>
-            
-            </div>
+             
+          </section>
 
 
-             {/* scss form */}
-
-            
-            
-
-            
-
-            <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">4th Dec - 6th Dec 2023</h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="webp/contact.webp" alt="Gardenia" />
-                <img src="webp/contact-1.webp" alt="Gardenia" />
-              </div>
-              <div className="project-card__right">
-                <h2
+          <section className="section-contact">
+          <h2
                   data-scroll
                   data-scroll-offset="35%"
                   data-scroll-repeat={true}
                   data-scroll-class="lp-anim"
                   className="heading-2"
+                  padding ="5%"
                 >
-                  Le Roma Gardenia, Bangalore
+                  Guest Details
                 </h2>
-                <a
-                  rel="noopener"
-                  target="_blank"
-                  href="https://maps.app.goo.gl/KkN7GJcDGo2CjqJX8"
-                  className="project-card__link"
-                >
-                  Click here if you wanna check how close you are on the maps.
-                </a>
-                
-              </div>
-            </div>
+            <div className="table-header">
+              <table cellPadding="5" cellSpacing="2" border="0">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>phone</th>
+                    <th>date</th>
+                    <th>flight</th>
+                    <th>time</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>   
+            <div className="table-content">
+            <table>
+                {guests.map((guests, id) => {
+                    return (
+                        <tr key={id}>
+                            <td>{guests.gname}</td>
+                            <td>{guests.phone}</td>
+                            <td>{guests.date}</td>
+                            <td>{guests.flight}</td>
+                            <td>{guests.time}</td>
+                        </tr>
+                    )
+                })}
+            </table>
+            </div>       
+
+
           </section>
-         
-          <section className="section-contact">
-            <h1 className="heading-1">
-              <span>Thank you </span> <small>🤙</small>
-            </h1>
-            <h2 className="section-contact__h2">
-              Thanks you for filling the form out, its a huge help. We hope to see you soon, If you need any further details or if you want to just have a chat, please give us a
-              <a href="tel:+918383048570"> call </a>
-              or send me an
-              <a
-                href="mailto:lmarriesp@gmail.com"
-                rel="noopener"
-                target="_blank"
-              >
-                &nbsp; email 📧
-              </a>
-              .
-            </h2>
-          </section>
+          
+          
           <section className="section-socials">
             <h1 className="heading-1">
-              <span>Dont be a stranger!</span> <small>👋</small>
+              <span>Lmk if you face any problems on here</span>
             </h1>
-            <p className="paragraph">come have a chat</p>
+            
             <div className="section-socials--links">
-              <a
-                href="mailto:lmarriesp@gmail.com"
-                rel="noopener"
-                target="_blank"
-              >
-                👾 E-mail
-              </a>
-              <a
-                href="tel:+918383048570"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 Call Us
-              </a>
               
-              <a
-                href="https://www.instagram.com/"
-                rel="noopener"
-                target="_blank"
-              >
-                📸 Instagram
-              </a>
+              
             </div>
           </section>
         </main>
         <footer className="footer">
           <img
             src="svg/lp-logo-footer.svg"
-            alt="LP wedding"
+            alt="l P Wedding "
           />
           <div className="footer__socials">
-            <a
-              href=""
+          <a
+              href="#"
               target="_blank"
               rel="noopener"
             >
               <img src="svg/ganesha.svg" alt="ganesha" />
             </a>
-            
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="svg/21.svg" alt="21" />
+            </a>
           </div>
         </footer>
       </div>
+      </Provider>
     </>
   );
+
 };
+
 
 export default index;

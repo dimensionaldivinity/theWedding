@@ -288,34 +288,20 @@ const index: React.FC<indexProps> = ({}) => {
               </div>
             </div>
             <div className="header__footer--right">
-              <a
-                href="https://github.com/"
-                rel="noopener"
-                target="_blank"
-              >
-                👾 GH
-              </a>
-              <a
-                href="https://twitter.com/"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 TW
-              </a>
-              <a
-                href="https://www.linkedin.com/"
-                rel="noopener"
-                target="_blank"
-              >
-                💼 LD
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                rel="noopener"
-                target="_blank"
-              >
-                {" "}
-                📸 IN
+              <a>
+                <img src="svg/icon-flowerhand.svg" alt="" />
+              </a>{" "}
+              <a>
+                <img src="svg/icon-mala.svg" alt="" />
+              </a>{" "}
+              <a>
+                <img src="svg/icon-hawan.svg" alt="" />
+              </a>{" "}
+              <a>
+                <img src="svg/icon-tie.svg" alt="" />
+              </a>{" "}
+              <a>
+                <img src="svg/icon-tali.svg" alt="" />
               </a>
             </div>
           </div>
@@ -620,6 +606,10 @@ const index: React.FC<indexProps> = ({}) => {
                 </div>
               </div>
             </div>
+
+            
+
+
           </section>
           <section
             data-scroll
@@ -694,7 +684,7 @@ const index: React.FC<indexProps> = ({}) => {
             <p className="paragraph">come have a chat</p>
             <div className="section-socials--links">
               <a
-                href="mailto:lpwedding@gmail.com"
+                href="mailto:lmarriesp@gmail.com"
                 rel="noopener"
                 target="_blank"
               >
@@ -709,9 +699,8 @@ const index: React.FC<indexProps> = ({}) => {
               </a>
               
               <a
-                href="/people"
-                rel="noopener"
-                target="_blank"
+                href="/new"
+               
               >
                 📸 Instagram
               </a>

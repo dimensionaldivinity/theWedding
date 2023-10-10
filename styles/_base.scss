@@ -409,12 +409,13 @@ background: linear-gradient(to right, #ac27a5, #1c724a,); /* W3C, IE 10+/ Edge, 
 
   border-radius: 10px;
   margin-top: 5px;
+  margin-bottom: 3px;
  }
 
 .table-content{
   height:300px;
   overflow-x:auto;
-  margin-top: 0px;
+  margin-top: 20px;
   border: 1px solid rgba(255,255,255,0.3);
   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
   background: linear-gradient(to right, #000000, #000000);
@@ -452,3 +453,64 @@ tr:nth-of-type(even) td{
 ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
+
+.btn-custom {
+  
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-custom:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.btn-custom:hover:after {
+  transform: translate(0, 0);
+}
+
+.btn-custom:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.btn-custom:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .btn-custom {
+    padding: 0 40px;
+  }
+}
+
