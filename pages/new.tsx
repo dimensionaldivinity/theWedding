@@ -36,6 +36,7 @@ export default function App() {
                 value={phrase}
             />
            </div>
+           {/* branching this */}
             {/* <button onClick={forL}>Submit</button> */}
         </form>
                
