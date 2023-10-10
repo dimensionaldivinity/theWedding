@@ -8,7 +8,7 @@ export default function App() {
 
     const submit = e => {
         e.preventDefault()
-        console.log(phrase, password)
+        console.log(phrase)
     }
     const router = useRouter();
 
