@@ -13,7 +13,7 @@ export default function App() {
     const router = useRouter();
 
     const forL  = e => {
-        if (phrase === "gulabi")
+        if (phrase === "gulabi" || "Gulabi")
         {router.push('/new2')}
         else {
         window.alert("try again")
