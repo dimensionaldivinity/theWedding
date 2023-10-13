@@ -234,7 +234,7 @@ useEffect(() => {
           </p> */}
           <section id="sectionProjects" className="section-projects">
             <h1 className="heading-1">
-              <span> Hi! Baby, I LOVE YOU SOOO MCUH</span> <small>💼</small>
+              <span> The Guest List</span> <small>💼</small>
             </h1>
             
              

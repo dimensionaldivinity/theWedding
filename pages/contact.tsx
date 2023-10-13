@@ -244,7 +244,7 @@ useEffect(() => {
     <input 
     value={newGuest.email}
     onChange={(e) => setNewGuest({...newGuest, email : e.target.value})}
-    type="email" placeholder="-" name="email" autocomplete="off"></input>
+    type="email" placeholder="" name="email" autocomplete="off"></input>
     <span className="bar"></span>
     <label>Email</label>
   </div>
@@ -252,7 +252,7 @@ useEffect(() => {
     <input 
     value={newGuest.phone}
     onChange={(e) => setNewGuest({...newGuest, phone : e.target.value})} 
-    type="phone" name="phone" class="input--tel" autocomplete="off" placeholder="-" minlength="10" required></input>
+    type="phone" name="phone" class="input--tel" autocomplete="off" placeholder="" minlength="10" required></input>
     <span className="bar"></span>
     <label>Phone*</label>
   </div>
@@ -260,7 +260,7 @@ useEffect(() => {
     <input 
     value={newGuest.date}
     onChange={(e) => setNewGuest({...newGuest, date : e.target.value})} 
-    type="date" name="date" autocomplete="off"  placeholder="-"></input>
+    type="date" name="date" autocomplete="off"  placeholder=""></input>
     <span className="bar"></span>
     <label>Date of Arrival</label>
   </div>
@@ -268,7 +268,7 @@ useEffect(() => {
     <input 
     value={newGuest.flight}
     onChange={(e) => setNewGuest({...newGuest, flight : e.target.value})} 
-    type="text" placeholder="-" name="flight" autocomplete="off"></input>
+    type="text" placeholder="" name="flight" autocomplete="off"></input>
     <span className="bar"></span>
     <label>Flight/Train no.</label>
   </div>
@@ -276,7 +276,7 @@ useEffect(() => {
     <input 
     value={newGuest.time}
     onChange={(e) => setNewGuest({...newGuest, time : e.target.value})} 
-    type="time" placeholder="-" name="time" autocomplete="off"></input>
+    type="time" placeholder="" name="time" autocomplete="off"></input>
     <span className="bar"></span>
     <label>Estimated time of arrival</label>
   </div>
@@ -285,11 +285,11 @@ useEffect(() => {
     <input 
     value={newGuest.message}
     onChange={(e) => setNewGuest({...newGuest, message : e.target.value})} 
-    type="message" placeholder="-" name="message" autocomplete="off"></input>
+    type="textarea" placeholder="" name="message" autocomplete="off"></input>
     <span className="bar"></span>
     <label>Anything else you wanna let us know?</label>
   </div>
-  <button className="btn-custom" onClick={addGuest}>SUBMIT</button>
+  <button className="btn-custom" onClick={addGuest}>Send it</button>
 </form>
             
             </div>
