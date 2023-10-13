@@ -724,15 +724,15 @@ const index: React.FC<indexProps> = ({}) => {
           />
           <div className="footer__socials">
            
-              {/* <img src="svg/ganesha.svg" alt="21 logo" /> */}
+              <img src="svg/ganesha.svg" alt="21 logo" />
             
-            <a
+            {/* <a
               href="#"
               target="_blank"
               rel="noopener"
             >
               <img src="svg/21.svg" alt="github logo" />
-            </a>
+            </a> */}
           </div>
         </footer>
       </div>
