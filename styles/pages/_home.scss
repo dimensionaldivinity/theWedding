@@ -167,16 +167,16 @@
   .project-card {
     width: 80%;
     margin: 20rem auto;
-    background: linear-gradient(
-      180deg,
-      rgba(35, 37, 49, 0.5) 0%,
-      rgba(15, 15, 24, 0.5) 100%,
-    );
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(35, 37, 49, 0.5) 0%,
+    //   rgba(15, 15, 24, 0.5) 100%,
+    // );
 
     // background-image: linear-gradient(120deg, #29323c 0%, #485563 100%), url(https://grainy-gradients.vercel.app/noise.svg);
     
     
-    // background: linear-gradient(to right, blue, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
+    background: linear-gradient(to bottom, rgba(35, 40, 45, 0.411), rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
     // background: rgba(15, 15, 24, 0.5) 100%;
     border: 0.2rem solid #20222e;
     box-sizing: border-box;
@@ -409,6 +409,8 @@
   }
 }
 
+
+
 // section=reviews
 
 .section-reviews__bg {
@@ -527,6 +529,11 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     padding: 0 4rem;
   }
 
+  &__btn {
+    border: solid #ffffff;
+    border-radius: 10px;
+  }
+
   &__h2 {
     font-size: 4.5rem;
     line-height: 130.4%;
@@ -554,6 +561,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     }
   }
 }
+
+
 
 // section-socials
 .section-socials {
@@ -657,3 +666,58 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .speaker__toggle--anim {
   left: 54%;
 }
+
+
+//peacock stuff//
+
+.project-card-peacock {
+  width: 80%;
+  margin: 10rem auto;
+ 
+
+  // background-image: linear-gradient(120deg, #29323c 0%, #485563 100%), url(https://grainy-gradients.vercel.app/noise.svg);
+  
+  
+  // background: linear-gradient(to right, blue, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
+  // background: rgba(15, 15, 24, 0.5) 100%;
+  border: 0.2rem solid #20222e00;
+  box-sizing: border-box;
+  backdrop-filter: blur(54px);
+  border-radius: 7.3rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  align-items: center;
+
+  @media only screen and (max-width: 57em) {
+    width: 70%;
+    border-radius: 6.3rem;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 40em) {
+    width: 75%;
+  }
+  @media only screen and (max-width: 35em) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 30em) {
+    padding: 4rem;
+    width: 84%;
+    border-radius: 4.3rem;
+  }
+  @media only screen and (max-width: 23em) {
+    width: 90%;
+  }
+  @media only screen and (max-width: 22em) {
+    width: 100%;
+  }
+
+  &__image {
+    max-width:20px;
+  }
+  
+}
+
+
+//peacock stuff//

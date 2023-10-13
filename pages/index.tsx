@@ -552,7 +552,7 @@ const index: React.FC<indexProps> = ({}) => {
                 data-displacement="webp/myDistorsionImage.webp"
               >
                 <img src="webp/pheras.webp" alt="pheras" />
-                <img src="webp/pheras-1.webp" alt="pheras" />
+                <img src="webp/pheras-2.webp" alt="pheras" />
               </div>
               <div className="project-card__right">
                 <h2
@@ -605,6 +605,16 @@ const index: React.FC<indexProps> = ({}) => {
                   </a>
                 </div>
               </div>
+            </div>
+
+            
+
+            <div className="project-card-peacock">
+              <div>
+                <img src="/webp/untitled.webp"></img>
+                <div><img></img></div>
+              </div>
+
             </div>
 
             
@@ -671,9 +681,9 @@ const index: React.FC<indexProps> = ({}) => {
               <span>If you have a moment </span> <small>🤙</small>
             </h1>
             <h2 className="section-contact__h2">
-              Please fill 
-              <a href="/contact"> form &nbsp;</a>
-              to help us facilitate your commute in Bangalore. See you very soon.
+              Please fill this &nbsp;
+              <a className= "section-contact__btn" href="/contact"> form &nbsp;</a>
+              &nbsp; to help us facilitate your commute in Bangalore. See you very soon.
               
             </h2>
           </section>
@@ -716,13 +726,13 @@ const index: React.FC<indexProps> = ({}) => {
            
               <img src="svg/ganesha.svg" alt="21 logo" />
             
-            <a
+            {/* <a
               href="#"
               target="_blank"
               rel="noopener"
             >
               <img src="svg/21.svg" alt="github logo" />
-            </a>
+            </a> */}
           </div>
         </footer>
       </div>

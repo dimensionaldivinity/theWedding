@@ -13,7 +13,7 @@ export default function App() {
     const router = useRouter();
 
     const forL  = e => {
-        if (phrase === "dil")
+        if (phrase === "dil" || "Dil")
         {router.push('/guestlist')}
         else {
         window.alert("too tough?")
