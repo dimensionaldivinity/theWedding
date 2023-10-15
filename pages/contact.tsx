@@ -260,7 +260,7 @@ useEffect(() => {
     <input 
     value={newGuest.date}
     onChange={(e) => setNewGuest({...newGuest, date : e.target.value})} 
-    type="date" name="date" autocomplete="off"  placeholder=""></input>
+    type="date" name="date" autocomplete="off"  placeholder="" min="2023-12-03" max="2023-12-05"></input>
     <span className="bar"></span>
     <label>Date of Arrival</label>
   </div>
@@ -285,7 +285,7 @@ useEffect(() => {
     <input 
     value={newGuest.message}
     onChange={(e) => setNewGuest({...newGuest, message : e.target.value})} 
-    type="textarea" placeholder="" name="message" autocomplete="off"></input>
+    type="textarea" rows="10" cols="40" placeholder="" name="message" autocomplete="off"></input>
     <span className="bar"></span>
     <label>Anything else you wanna let us know?</label>
   </div>

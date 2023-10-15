@@ -314,13 +314,13 @@ useEffect(() => {
             >
               <img src="svg/ganesha.svg" alt="ganesha" />
             </a>
-            <a
+            {/* <a
               href="#"
               target="_blank"
               rel="noopener"
             >
               <img src="svg/21.svg" alt="21" />
-            </a>
+            </a> */}
           </div>
         </footer>
       </div>

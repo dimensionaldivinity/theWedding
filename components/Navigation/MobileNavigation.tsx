@@ -90,9 +90,8 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </div>
           <div className="navigation-top__left--links">
           <a
-                href="tel:+918383048570"
-                rel="noopener"
-                target="_blank"
+                href="/contact"
+                
               >
                 Add Your Travel Details
               </a>
