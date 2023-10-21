@@ -8,6 +8,11 @@ import ReactGa from "react-ga";
 import { collection, addDoc, getDoc, querySnapshot, onSnapshot, query } from "firebase/firestore";
 import { db } from "../firebase/firebase";
 import * as XLSX from "xlsx";
+import { AuthContext, useAuthContext } from "./api/authcontext";
+import { useRouter } from "next/router";
+
+
+
 
 interface indexProps {}
 
@@ -40,6 +45,13 @@ const transition: { duration: number; ease: number[] } = {
 const fetcher = (url: any) => fetch(url).then((res) => res.json());
 
 const index: React.FC<indexProps> = ({}) => {
+
+  const {user} = useAuthContext()
+  const router = useRouter()
+
+  React.useEffect(() => {
+    if (user === null) router.push('/lmi')
+  }, [user])
   
   const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false);
 
