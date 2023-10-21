@@ -514,3 +514,60 @@ tr:nth-of-type(even) td{
   }
 }
 
+
+
+.layout { 
+  width: 600px; 
+  margin: auto; 
+} 
+.accordion { 
+  padding: 10px; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  // background: rgb(196, 206, 105); 
+  border-radius: 10px; 
+  border:rgb(196, 206, 105) solid;
+} 
+.accordion__question p { 
+  margin: 5px; 
+  padding: 0; 
+  font-family: $font-secondary,Verdana; 
+  font-size: 20px; 
+  color: #ffffff;
+} 
+.accordion__answer p { 
+  margin: 5px; 
+  padding: 20px; 
+  font-size: large; 
+  font-family: $font-primary, Tahoma, sans-serif; 
+  color: rgb(12, 12, 205); 
+  background: rgb(255, 255, 255); 
+  border-radius: 10px; 
+} 
+.accordion:hover { 
+  cursor: pointer; 
+} 
+.accordion__answer { 
+  display: none; 
+} 
+.accordion.active .accordion__answer { 
+  display: block; 
+}
+
+.accordian-link { 
+  font-size: large; 
+  font-family: $font-primary, Tahoma, sans-serif; 
+  color: rgb(200, 80, 80); 
+
+}
+
+.accordian-contact {
+  font-family: $font-secondary,Verdana; 
+  font-size: 20px; 
+  color: #ffffff;
+  padding: 10px;
+  // border: #fff solid;
+  border-radius: 10px;
+  background-color: #25b7c4;
+}
+

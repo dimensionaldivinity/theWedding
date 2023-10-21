@@ -678,7 +678,7 @@ const index: React.FC<indexProps> = ({}) => {
           </section>
           <section className="section-contact">
             <h1 className="heading-1">
-              <span>If you have a moment </span> <small>🤙</small>
+              <span>If you have a moment </span> <small>🙏</small>
             </h1>
             <h2 className="section-contact__h2">
               Please fill this &nbsp;

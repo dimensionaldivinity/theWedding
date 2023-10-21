@@ -60,7 +60,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </div>
           <div className="navigation-top__left--links">
           <a
-                href="tel:+918383048570"
+                href="/itenerary"
                 rel="noopener"
                 target="_blank"
               >
@@ -70,9 +70,8 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </div>
           <div className="navigation-top__left--links">
           <a
-                href="tel:+918383048570"
-                rel="noopener"
-                target="_blank"
+                href="/wardrobe"
+                
               >
                 Wardrobe Planner
               </a>
@@ -80,9 +79,8 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </div>
           <div className="navigation-top__left--links">
           <a
-                href="tel:+918383048570"
-                rel="noopener"
-                target="_blank"
+                href="/faq"
+                
               >
                 F.A.Qs
               </a>
@@ -90,24 +88,14 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </div>
           <div className="navigation-top__left--links">
           <a
-                href="tel:+918383048570"
-                rel="noopener"
-                target="_blank"
+                href="/contact"
+                
               >
                 Add Your Travel Details
               </a>
 
           </div>
-          <div className="navigation-top__left--links">
-          <a
-                href="tel:+918383048570"
-                rel="noopener"
-                target="_blank"
-              >
-                Add Your Travel Details
-              </a>
-
-          </div>
+          
         </div>
         <div className="navigation-top__right">
           <h4 className="navigation-h4">Tring to reach us?</h4>

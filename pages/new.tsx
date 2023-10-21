@@ -15,9 +15,12 @@ export default function App() {
     const forL  = e => {
         if (phrase === "gulabi" || "Gulabi")
         {router.push('/new2')}
+        else if (phrase === "")
+        {window.alert("try harder to guess")}
         else {
         window.alert("try again")
         }
+        
 
 
     }
