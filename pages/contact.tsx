@@ -59,7 +59,7 @@ const addGuest = async (e) => {
       // message: newGuest.message,
     });
     setNewGuest({gname:'', email:'', phone:'', date:'', flight:'', time:'', });
-    swal("Great", "Your form is submitted, see you soon.", "success");
+    swal("Thank you", "See you soon at the wedding.", "success");
   }
 }
 //read items from db

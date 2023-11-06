@@ -58,16 +58,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
                 Invitation
               </a>
           </div>
-          <div className="navigation-top__left--links">
-          <a
-                href="/itenerary"
-                rel="noopener"
-                target="_blank"
-              >
-                Itenerary
-              </a>
-
-          </div>
+          
           <div className="navigation-top__left--links">
           <a
                 href="/pdf/wardrobe-planner.pdf"
