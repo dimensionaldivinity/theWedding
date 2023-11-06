@@ -620,13 +620,13 @@ const index: React.FC<indexProps> = ({}) => {
 
             
 
-            <div className="project-card-peacock">
+            {/* <div className="project-card-peacock">
               <div>
                 <img src="/webp/untitled.webp"></img>
                 <div><img></img></div>
               </div>
 
-            </div>
+            </div> */}
 
             
 
