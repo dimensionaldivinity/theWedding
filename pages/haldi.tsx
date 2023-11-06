@@ -218,13 +218,13 @@ const index: React.FC<indexProps> = ({}) => {
                 
               </div>
               <div className="writeup">
-              <p className="paragraph-writeup">
+              <p className="paragraph-writeup" align="justify"  >
               The haldi ceremony is one in which a paste of haldi or turmeric is applied to the bride and the groom’s body before their wedding. Traditionally, people make a paste using haldi and different ingredients according to their individual family customs, such as sandalwood powder and milk, or with rose water. This paste is then applied on the bride and the groom’s face, neck, hands and feet, by their near and dear ones. Right after the haldi ceremony, the bride and groom are given a bath of mustard oil and curd, followed by water. This is known as Telbaan. This ceremony is also accompanied by traditional songs and dances. </p>
             <br />
-            <p className="paragraph-writeup">
+            <p className="paragraph-writeup" align="justify">
             Haldi holds such a special place for many reasons. As many of you might know, yellow is a colour that is associated with spring, happiness and new beginnings. However, the act of putting haldi has deeper significance. Some texts suggest it acts as an evil eye, to ward off evil spirits from affecting the bride and the groom. The colour of Haldi is also considered auspicious. The auspiciousness of this ingredient and its colour ushers in a life of prosperity for the couple, who are starting off their new life together. This is why in many cultures, the bride and groom wear yellow clothes on their wedding day as well. Finally, for beauty, because in the olden days, when cosmetic beauty treatments were not available, Indians had their own natural beauty secrets to ensure that a couple looked radiant and wonderful on their wedding day. Haldi is known to have properties that leave the skin fair and glowing. Haldi being a powerful antiseptic, also serves to purify and cleanse the body. Interestingly, curcumin, the key ingredient in turmeric, is said to have antidepressant properties and thus helps to ward away pre-wedding jitters! </p>
             <br />
-            <p className="paragraph-writeup">
+            <p className="paragraph-writeup" align="justify">
             The Haldi ceremony's historical and cultural significance, along with its positive connotations, is truly heartwarming. From its role in warding off evil spirits to its association with new beginnings and radiant skin, Haldi holds a special place in Indian wedding customs. Haldi ceremony will take place at La Roma Gardenia, 5th December 10am onwards. 
             </p>
             <a href="/varmala">
@@ -282,62 +282,6 @@ const index: React.FC<indexProps> = ({}) => {
           {/* <p className="about-text">
             Hello! 👋, Write some personal stuff here maye? <br /> 
           </p> */}
-          <section id="sectionProjects" className="section-projects">
-            
-            
-
-            {/* <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">SANGEET</h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="webp/sangeet.webp" alt="sangeet" />
-                <img src="webp/sangeet-2.webp" alt="sangeet" />
-              </div>
-              <div className="project-card__right">
-                
-              <a
-                  className="project-card__link"
-                >
-                  Get ready to put on your dancing shoes
-                </a>
-                
-                <h2
-                  data-scroll
-                  data-scroll-offset="35%"
-                  data-scroll-repeat={true}
-                  data-scroll-class="safarika-anim"
-                  className="heading-2"
-                ><br/>
-                  Indo-Western, Shimmer & Shine
-                </h2>
-               
-               
-              </div>
-            </div> */}
-
-            
-
-
-            
-            
-
-            <div className="project-card-peacock">
-              <div>
-                <img src="/webp/untitled.webp"></img>
-                <div><img></img></div>
-              </div>
-
-            </div>
-
-            
-
-
-          </section>
-          
           {/* <section className="section-contact">
             <h1 className="heading-1">
               <span>If you have a moment </span> <small>🙏</small>

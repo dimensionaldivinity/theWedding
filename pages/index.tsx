@@ -329,6 +329,7 @@ const index: React.FC<indexProps> = ({}) => {
                   MEHENDI
                 </h4>
               </div>
+              <a href="/mehendi">
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
@@ -336,6 +337,7 @@ const index: React.FC<indexProps> = ({}) => {
                 <img src="webp/mehendi.webp" alt="mehendi" />
                 <img src="webp/mehendi-2.webp" alt="mehendi" />
               </div>
+              </a>
               <div className="project-card__right">
                 <h2
                   data-scroll
@@ -379,6 +381,7 @@ const index: React.FC<indexProps> = ({}) => {
               <div className="project-card__left">
                 <h4 className="heading-4">SANGEET</h4>
               </div>
+              <a href="/sangeet">
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
@@ -386,6 +389,7 @@ const index: React.FC<indexProps> = ({}) => {
                 <img src="webp/sangeet.webp" alt="sangeet" />
                 <img src="webp/sangeet-2.webp" alt="sangeet" />
               </div>
+              </a>
               <div className="project-card__right">
                 <h2
                   data-scroll
@@ -437,6 +441,7 @@ const index: React.FC<indexProps> = ({}) => {
                 HALDI & MANGALASNANAM
                 </h4>
               </div>
+              <a href="/haldi">
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
@@ -444,6 +449,7 @@ const index: React.FC<indexProps> = ({}) => {
                 <img src="webp/haldi.webp" alt="haldi" />
                 <img src="webp/haldi-2.webp" alt="haldi" />
               </div>
+              </a>
               <div className="project-card__right">
                 <h2
                   data-scroll
@@ -495,6 +501,7 @@ const index: React.FC<indexProps> = ({}) => {
                   VARMALA & RECEPTION
                 </h4>
               </div>
+              <a href="/varmala">
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
@@ -502,6 +509,7 @@ const index: React.FC<indexProps> = ({}) => {
                 <img src="webp/varmala.webp" alt="varmala" />
                 <img src="webp/varmala-2.webp" alt="varmala" />
               </div>
+              </a>
               <div className="project-card__right">
                 <h2
                   data-scroll
@@ -547,6 +555,7 @@ const index: React.FC<indexProps> = ({}) => {
               <div className="project-card__left">
                 <h4 className="heading-4">PHERAS & MUHURTHAM</h4>
               </div>
+              <a href="/pheras">
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
@@ -555,6 +564,7 @@ const index: React.FC<indexProps> = ({}) => {
                 <img src="webp/pheras-2.webp" alt="pheras" />
                 </a>
               </div>
+              </a>
               <div className="project-card__right">
                 <h2
                   data-scroll
@@ -610,13 +620,13 @@ const index: React.FC<indexProps> = ({}) => {
 
             
 
-            <div className="project-card-peacock">
+            {/* <div className="project-card-peacock">
               <div>
                 <img src="/webp/untitled.webp"></img>
                 <div><img></img></div>
               </div>
 
-            </div>
+            </div> */}
 
             
 

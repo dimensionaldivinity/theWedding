@@ -837,6 +837,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .writeup {
   display: block;
   padding: 10px;
+  justify-content: center;
 }
 
 .paragraph-writeup {
@@ -844,6 +845,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   color: #fff;
   padding: 2px;
   margin-top: 2px;
+  align-items: center;
   
 }
 
