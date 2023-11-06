@@ -374,14 +374,14 @@ useEffect(() => {
                 rel="noopener"
                 target="_blank"
               >
-                👾 E-mail
+                📧 E-mail
               </a>
               <a
                 href="tel:+918383048570"
                 rel="noopener"
                 target="_blank"
               >
-                🐦 Call Us
+                📞 Call Us
               </a>
               
               <a

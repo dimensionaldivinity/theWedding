@@ -32,7 +32,22 @@ export const AuthContextProvider = ({
 
     return (
         <AuthContext.Provider value={{ user }}>
-            {loading ? <div><img src="webp/pheras.webp" alt="pheras" /></div> : children}
+            {loading ? <div>
+                {/* <span>
+                    <img src="webp/loading.webp" alt="loading..." />
+                 </span> */}
+                 <div class="loading">
+	               <div class="loading-text">
+		               <span class="loading-text-words">4</span>
+		               <span class="loading-text-words">-</span>
+		               <span class="loading-text-words">6</span>
+		               <span class="loading-text-words"></span>
+		               <span class="loading-text-words">D</span>
+		               <span class="loading-text-words">E</span>
+		               <span class="loading-text-words">C</span>
+	               </div>
+                 </div>
+            </div> : children}
         </AuthContext.Provider>
     );
 };

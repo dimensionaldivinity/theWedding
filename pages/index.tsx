@@ -550,9 +550,10 @@ const index: React.FC<indexProps> = ({}) => {
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
-              >
+              ><a href="/pheras">
                 <img src="webp/pheras.webp" alt="pheras" />
                 <img src="webp/pheras-2.webp" alt="pheras" />
+                </a>
               </div>
               <div className="project-card__right">
                 <h2
@@ -621,61 +622,11 @@ const index: React.FC<indexProps> = ({}) => {
 
 
           </section>
-          <section
-            data-scroll
-            data-scroll-offset="35%"
-            data-scroll-repeat={true}
-            data-scroll-class="section-reviews__bg"
-            className="section-reviews"
-          >
-            <div className="section-reviews__top">
-              <h1 className="heading-1">
-                <span>It's a party </span> <small>😊</small>
-              </h1>
-              <p className="paragraph paragraph__sub">
-                same some nice things on here?
-              
-              </p>
-            </div>
-            <div className="section-reviews__bottom">
-              <div className="section-reviews__bottom-wrapper review-card__anim1">
-                {outfits.map ((outfit, id) => (
-                  <div className="review-card">
-                    <div className="review-card__top">
-                      <div className="review-card__top--left">
-                        <p className="review-card__p">{outfit.when}</p>
-                        <h3 className="review-card__h3">{outfit.occ}</h3>
-                      </div>
-                      <div className="review-card__top--right">
-                        {/* <img src="svg/twitter.svg" alt="twitter icon" /> */}
-                      </div>
-                    </div>
-                    <div className="review-card__bottom">
-                      <h2 className="review-card__h2">{outfit.wear}</h2>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="section-reviews__bottom-wrapper review-card__anim2">
-                {outfits.map ((outfit, id) => (
-                  <div className="review-card">
-                    <div className="review-card__top">
-                      <div className="review-card__top--left">
-                        <p className="review-card__p">{outfit.when}</p>
-                        <h3 className="review-card__h3">{outfit.occ}</h3>
-                      </div>
-                      <div className="review-card__top--right">
-                        {/* <img src="svg/twitter.svg" alt="twitter icon" /> */}
-                      </div>
-                    </div>
-                    <div className="review-card__bottom">
-                      <h2 className="review-card__h2">{outfit.wear}</h2>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+          
+          {/* Experiment with review cards */}
+         
+
+
           <section className="section-contact">
             <h1 className="heading-1">
               <span>If you have a moment </span> <small>🙏</small>
@@ -698,14 +649,14 @@ const index: React.FC<indexProps> = ({}) => {
                 rel="noopener"
                 target="_blank"
               >
-                E-mail
+               📧 E-mail
               </a>
               <a
                 href="tel:+918383048570"
                 rel="noopener"
                 target="_blank"
               >
-                Call Us
+               📞 Call Us
               </a>
               
               <a
