@@ -10,6 +10,7 @@ export default async function signIn(email, password) {
         result = await signInWithEmailAndPassword(theAuth, email, password);
     } catch (e) {
         error = e;
+        window.alert("Please check your credentials and try again");
     }
 
     return { result, error };

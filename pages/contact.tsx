@@ -7,6 +7,7 @@ import useSwr from "swr";
 import ReactGa from "react-ga";
 import { collection, addDoc, onSnapshot, query } from "firebase/firestore";
 import { db } from "../firebase/firebase";
+import swal from "sweetalert";
 
 interface indexProps {}
 
@@ -40,13 +41,13 @@ const index: React.FC<indexProps> = ({}) => {
     // { gname: 'abc', when: '4.12' },
     // { gname: 'def', when: '5.12' },
 ]);
-const [newGuest, setNewGuest] = useState({gname : '', email: '', phone:'', date:'', flight:'', time:'', message:'' })
+const [newGuest, setNewGuest] = useState({gname : '', email: '', phone:'', date:'', flight:'', time:'' })
 
 //add items to db
 
 const addGuest = async (e) => {
   e.preventDefault();
-  if (newGuest.gname !== '', newGuest.email !== '', newGuest.phone !== '', newGuest.date !== '', newGuest.flight !== '', newGuest.time !== '', newGuest.message !== '' ) {
+  if (newGuest.gname !== '', newGuest.email !== '', newGuest.phone !== '', newGuest.date !== '', newGuest.flight !== '', newGuest.time !== '' ) {
     // setGuests([...guests, newGuest]);
     await addDoc(collection(db, 'guests'), {
       gname: newGuest.gname.trim(),
@@ -55,9 +56,10 @@ const addGuest = async (e) => {
       date: newGuest.date,
       flight: newGuest.flight,
       time: newGuest.time,
-      message: newGuest.message,
+      // message: newGuest.message,
     });
-    setNewGuest({gname:'', email:'', phone:'', date:'', flight:'', time:'', message:'' });
+    setNewGuest({gname:'', email:'', phone:'', date:'', flight:'', time:'', });
+    swal("Great", "Your form is submitted, see you soon.", "success");
   }
 }
 //read items from db
@@ -281,15 +283,15 @@ useEffect(() => {
     <label>Estimated time of arrival</label>
   </div>
   
-  <div className="group">
+  {/* <div className="group">
     <input 
     value={newGuest.message}
     onChange={(e) => setNewGuest({...newGuest, message : e.target.value})} 
     type="textarea" rows="10" cols="40" placeholder="" name="message" autocomplete="off"></input>
     <span className="bar"></span>
     <label>Anything else you wanna let us know?</label>
-  </div>
-  <button className="btn-custom" onClick={addGuest}>Send it</button>
+  </div> */}
+  <button type="submit" className="btn-custom" onClick={addGuest}>Send it</button>
 </form>
             
             </div>
@@ -374,14 +376,14 @@ useEffect(() => {
                 rel="noopener"
                 target="_blank"
               >
-                👾 E-mail
+                📧 E-mail
               </a>
               <a
                 href="tel:+918383048570"
                 rel="noopener"
                 target="_blank"
               >
-                🐦 Call Us
+                📞 Call Us
               </a>
               
               <a
