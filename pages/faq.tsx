@@ -248,7 +248,7 @@ answers.forEach((event) => {
   
       </motion.div> 
       <div class="accordion__answer"> 
-        <p align="justify">Le Roma Gardenia is a beautiful resort with lovely open garden spaces, a charming courtyard, a pool area, a welcoming clubhouse, and elegant residential blocks. Additionally, the resort offers a cozy lounge area, a well-stocked library, a snooker table for entertainment, and a movie theater for your leisure. If you find a moment amidst the joyous wedding celebrations, a leisurely stroll around the resort will allow you to relish these amenities. It's worth noting that all wedding events will be held in the scenic outdoor gardens and the delightful courtyard area.</p> 
+        <p>Le Roma Gardenia is a beautiful resort with lovely open garden spaces, a charming courtyard, a pool area, a welcoming clubhouse, and elegant residential blocks. Additionally, the resort offers a cozy lounge area, a well-stocked library, a snooker table for entertainment, and a movie theater for your leisure. If you find a moment amidst the joyous wedding celebrations, a leisurely stroll around the resort will allow you to relish these amenities. It's worth noting that all wedding events will be held in the scenic outdoor gardens and the delightful courtyard area.</p> 
       </div> 
     </motion.div> 
   
@@ -258,7 +258,7 @@ answers.forEach((event) => {
       </motion.div> 
   
       <div class="accordion__answer"> 
-        <p align="justify"> 
+        <p> 
         Some close family members and guests who need special assistance will be staying at the wedding venue at Le Roma Gardenia along with the Bride, Groom and their families. All other non-residential guests will stay in <a className="accordian-link" href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA">Clarion Hotel</a> in Yelahanka. This hotel is approximately 6-7 minutes away from the wedding venue. The hotel has been booked for our guests for 2 nights, that is 4th and 5th December. The room charges have been covered for your convenience, but if you need any extra room services, we kindly ask you to settle those charges individually at the time of check-out.
 </p>
 <p>
@@ -278,7 +278,7 @@ Check out: 11 Am (6th December, 2023)
       <p>3. What time should I arrive?</p>
       </motion.div>
       <div class="accordion__answer"> 
-        <p align="justify">The hotel's check-in time is set for 12 noon on the 4th of December. We kindly ask that you plan your transportation to ensure you have ample time to check in, refresh, and join us for the Mehendi festivities and the Welcome Lunch (starting at 1pm at Le Roma Gardenia). To assist us in making your journey more comfortable, please take a moment to complete this <a className="accordian-link" href="/contact">form</a> with your travel details. </p> 
+        <p>The hotel's check-in time is set for 12 noon on the 4th of December. We kindly ask that you plan your transportation to ensure you have ample time to check in, refresh, and join us for the Mehendi festivities and the Welcome Lunch (starting at 1pm at Le Roma Gardenia). To assist us in making your journey more comfortable, please take a moment to complete this <a className="accordian-link" href="/contact">form</a> with your travel details. </p> 
       </div> 
     </motion.div> 
 
@@ -288,7 +288,7 @@ Check out: 11 Am (6th December, 2023)
   
       </motion.div> 
       <div class="accordion__answer"> 
-      <p align="justify">The wedding celebrations culminate with the Pheras ceremony around 6am on the 6th of December. Following this, we extend a warm invitation for our guests to join us for breakfast, which will be served from 7am onward. The hotel's check-out time is scheduled for 11am, so we kindly request all guests to arrange their onward travel plans accordingly. Rest assured, transportation will be provided in the morning to ensure a smooth journey to the airports. Your comfort and convenience are our top priorities.</p></div> 
+      <p>The wedding celebrations culminate with the Pheras ceremony around 6am on the 6th of December. Following this, we extend a warm invitation for our guests to join us for breakfast, which will be served from 7am onward. The hotel's check-out time is scheduled for 11am, so we kindly request all guests to arrange their onward travel plans accordingly. Rest assured, transportation will be provided in the morning to ensure a smooth journey to the airports. Your comfort and convenience are our top priorities.</p></div> 
     </motion.div> 
 
     <motion.div class="accordion" variants={FADE_UP_ANIMATION_VARIANTS}> 
@@ -297,9 +297,9 @@ Check out: 11 Am (6th December, 2023)
   
       </motion.div> 
       <div class="accordion__answer"> 
-        <p align="justify">Upon your arrival at Kempegowda International Airport, dedicated transportation will be in place to convey you to your hotel. Furthermore, there will be designated vehicles operating between the hotel and the wedding venue, ensuring your convenience and timely arrivals as per the wedding event schedule.</p> 
+        <p>Upon your arrival at Kempegowda International Airport, dedicated transportation will be in place to convey you to your hotel. Furthermore, there will be designated vehicles operating between the hotel and the wedding venue, ensuring your convenience and timely arrivals as per the wedding event schedule.</p> 
         
-        <p align="justify">Please note that these cars have been exclusively reserved to facilitate transportation between the hotel, the wedding venue, and the airport only. They will not be available for personal use. Your cooperation in this matter is greatly appreciated.</p>
+        <p>Please note that these cars have been exclusively reserved to facilitate transportation between the hotel, the wedding venue, and the airport only. They will not be available for personal use. Your cooperation in this matter is greatly appreciated.</p>
       </div> 
     </motion.div> 
 
@@ -309,9 +309,9 @@ Check out: 11 Am (6th December, 2023)
   
       </motion.div> 
       <div class="accordion__answer"> 
-        <p align="justify">Indian wedding ceremonies are  joyful and festive, and colorful outfits are highly encouraged! To assist you in selecting the perfect attire, our <a className="accordian-link" href="/wardrobe">Wardrobe Planner</a> is designed to provide insights into the various wedding themes and offers recommendations for preferred colors to consider.  
+        <p>Indian wedding ceremonies are  joyful and festive, and colorful outfits are highly encouraged! To assist you in selecting the perfect attire, our <a className="accordian-link" href="/wardrobe">Wardrobe Planner</a> is designed to provide insights into the various wedding themes and offers recommendations for preferred colors to consider.  
         
-        </p><p align="justify">
+        </p><p>
         
         Ultimately, our priority is your comfort and enjoyment, so feel free to choose something that resonates with your style and allows you to dance and enjoy. If you desire more detailed information or specific suggestions, don't hesitate to consult the bride; she might have a treasure trove of recommendations and details at her disposal!
         </p>
@@ -324,7 +324,7 @@ Check out: 11 Am (6th December, 2023)
   
       </motion.div> 
       <div class="accordion__answer"> 
-      <p align="justify">Bangalore is a vibrant city with an array of fantastic places to explore. However, it's worth noting that the city's traffic can pose a substantial challenge. Most of the noteworthy attractions are located at least 1.5 to 2 hours away from the hotel and wedding venue. As a result, we recommend organizing any city-related activities either before or after the wedding dates to avoid adding unnecessary stress to your schedule. This way, you can fully enjoy the wedding festivities without feeling rushed.
+      <p>Bangalore is a vibrant city with an array of fantastic places to explore. However, it's worth noting that the city's traffic can pose a substantial challenge. Most of the noteworthy attractions are located at least 1.5 to 2 hours away from the hotel and wedding venue. As a result, we recommend organizing any city-related activities either before or after the wedding dates to avoid adding unnecessary stress to your schedule. This way, you can fully enjoy the wedding festivities without feeling rushed.
 </p>
       </div> 
     </motion.div> 
@@ -335,7 +335,7 @@ Check out: 11 Am (6th December, 2023)
   
       </motion.div> 
       <div class="accordion__answer"> 
-        <p align="justify">As mentioned above, Bangalore traffic is very congested and one has to keep 1.5 hours approx. for traveling anywhere from the wedding venue and hotel. If you are arriving a few days before the 4th or staying back after the 6th, we recommend booking hotels in the City Centre in order to be closer to eateries, shopping malls, markets, and attractions. Indiranagar, Koramangala and MG Road are some bustling areas which have a good mix of restaurants, breweries, shops, markets, etc. Some recommendations of hotels are:  
+        <p>As mentioned above, Bangalore traffic is very congested and one has to keep 1.5 hours approx. for traveling anywhere from the wedding venue and hotel. If you are arriving a few days before the 4th or staying back after the 6th, we recommend booking hotels in the City Centre in order to be closer to eateries, shopping malls, markets, and attractions. Indiranagar, Koramangala and MG Road are some bustling areas which have a good mix of restaurants, breweries, shops, markets, etc. Some recommendations of hotels are:  
         <li><a className="accordian-link" href="https://www.royalorchidhotels.com/regenta-inn-indiranagar-bangalore/overview " target="blank">Regenta Inn, Indiranagar</a></li>
         <li><a className="accordian-link" href="https://www.royalorchidhotels.com/regenta-inn-grand-koramangala-bengaluru/overview "target="blank">Regenta Inn Grand, Kormangala</a></li>
         <li><a className="accordian-link" href="https://www.blupetalhotel.com/ "target="blank">Bluepetal Hotel</a></li>
