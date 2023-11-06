@@ -218,11 +218,11 @@ const index: React.FC<indexProps> = ({}) => {
                 
               </div>
               <div className="writeup">
-              <p className="paragraph-writeup">
+              <p className="paragraph-writeup" align="justify">
             Few things say ‘Indian bride’ like henna-stained palms do! Mehendi is derived from the Sanskrit word mendhikā, while henna owes its origin to the Arabic name Hina. The leaves of the henna plant contain a red-orange molecule, which has the ability to temporarily stain the skin, hair and nails. Before hair dyes, body art and tatoos were popular, henna leaves were dried and ground into a powder, mixed into a paste and applied using a variety of techniques. Henna has reportedly been used for body art for at least 5,000 years and has a long history of migration and cultural interaction with some scholars claim that the earliest documentation of henna uses is found in ancient Indian texts and images, indicating that mehendi as an art form may have originated in ancient India. Mehendi is also a part of the solah shringar (16 steps) recommended by ancient texts to get the bride ready for her new life. Not only is it considered to bring luck, joy and beauty, its scent is also said to have aphrodisiac properties. There are also some ‘old wives tales’ associated with mehendi, namely, it symbolizes the strength of the union between the soon-to-be-married couple, and it is believed that the deeper the color of a bride’s mehendi, the happier and more prosperous her marriage will be! Today, one can find myriad and intricate designs to apply on one’s hands, palms and feet. It is a time-consuming activity, but one that truly is best enjoyed in the company of others, over laughter, fun, music and games!
             </p>
             <br />
-            <p className="paragraph-writeup">
+            <p className="paragraph-writeup" align="justify">
             The origins of mehendi and its symbolism in Indian weddings are both intriguing and beautiful. The idea of bringing people together over intricate henna designs, laughter, music, and games adds a heartwarming touch to the celebration. Mehendi ceremony will take place at La Roma Gardenia, 4th December 1pm onwards. 
             </p>
             <a href="/sangeet">

@@ -218,7 +218,7 @@ const index: React.FC<indexProps> = ({}) => {
                 
               </div>
               <div className="writeup">
-              <p className="paragraph-writeup">
+              <p className="paragraph-writeup" align="justify">
               In the vivid tapestries of Indian weddings, the Varmala ceremony stands as a fascinating spectacle, symbolizing the union of two souls. This ritual has its origins in ancient traditions and is seen as an integral part of a hindu wedding. In ancient times, a girl used to choose her groom by locating a garland around his neck. This ceremony was termed as Swayamvar, where ​​Svayaṁ in Sanskrit means 'self' and vara means 'groom'. In many old scriptures and epics, such as Ramayan or the Mahabharat, this has been documented, where by placing a varmala around a man, the woman accepts him as her husband. 
               </p>
               <p> <ol type = "1" className="list-writeup">
@@ -233,13 +233,13 @@ const index: React.FC<indexProps> = ({}) => {
               </ol>
               </p>
             <br />
-            <p className="paragraph-writeup">
+            <p className="paragraph-writeup" align="justify">
             It's truly fascinating to consider how this ritual underscores the empowerment of Hindu women in ancient times, highlighting their autonomy in selecting their life partners. In modern times, the Varmala ceremony continues to hold immense significance as the bride and groom exchange garlands, symbolizing their mutual recognition and acceptance of each other as life partners. This act is akin to the exchange of wedding rings in many other cultures and beautifully signifies the union of two souls in a Hindu wedding.
 Today, the Varmala, or the ceremony of garlands, marks the first ritual that the Groom & the Bride perform together at their wedding ceremony. By exchanging garlands, similar to the exchange of wedding rings, they signify their recognition & acceptance of each other as life partners. 
 
             </p>
             <br />
-            <p className="paragraph-writeup">
+            <p className="paragraph-writeup" align="justify">
             
 
 It's a beautiful tradition that underscores the significance of choice and mutual commitment in the journey of matrimony. Varmala ceremony will take place at La Roma Gardenia, 5th December 6.30pm. </p>
@@ -298,61 +298,7 @@ It's a beautiful tradition that underscores the significance of choice and mutua
           {/* <p className="about-text">
             Hello! 👋, Write some personal stuff here maye? <br /> 
           </p> */}
-          <section id="sectionProjects" className="section-projects">
-            
-            
-
-            {/* <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">SANGEET</h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="webp/sangeet.webp" alt="sangeet" />
-                <img src="webp/sangeet-2.webp" alt="sangeet" />
-              </div>
-              <div className="project-card__right">
-                
-              <a
-                  className="project-card__link"
-                >
-                  Get ready to put on your dancing shoes
-                </a>
-                
-                <h2
-                  data-scroll
-                  data-scroll-offset="35%"
-                  data-scroll-repeat={true}
-                  data-scroll-class="safarika-anim"
-                  className="heading-2"
-                ><br/>
-                  Indo-Western, Shimmer & Shine
-                </h2>
-               
-               
-              </div>
-            </div> */}
-
-            
-
-
-            
-            
-
-            <div className="project-card-peacock">
-              <div>
-                <img src="/webp/untitled.webp"></img>
-                <div><img></img></div>
-              </div>
-
-            </div>
-
-            
-
-
-          </section>
+         
           
           {/* <section className="section-contact">
             <h1 className="heading-1">

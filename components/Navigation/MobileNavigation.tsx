@@ -51,7 +51,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           <h4 className="navigation-h4">We are excited to have you!</h4>
           <div className="navigation-top__left--links">
           <a
-                href="/pdf/Wedding-Invitation.pdf"
+                href="/pdf/wedding-invitation.pdf"
                 rel="noopener"
                 target="_blank"
               >
@@ -70,7 +70,9 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </div>
           <div className="navigation-top__left--links">
           <a
-                href="/wardrobe"
+                href="/pdf/wardrobe-planner.pdf"
+                rel="noopener"
+                target="blank"
                 
               >
                 Wardrobe Planner
