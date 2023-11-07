@@ -313,7 +313,7 @@ useEffect(() => {
               <span>Thank you </span> <small>🙏</small>
             </h1>
             <h2 className="section-contact__h2">
-              Thanks you for filling the form out, its a huge help. We hope to see you soon, If you need any further details or if you want to just have a chat, please give us a
+              Thank you for filling the form out, its a huge help. We hope to see you soon, If you need any further details please give us a
               <a href="tel:+918383048570"> call </a>
               or send me an
               <a

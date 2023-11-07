@@ -309,7 +309,7 @@ Check out: 11 Am (6th December, 2023)
   
       </motion.div> 
       <div class="accordion__answer"> 
-        <p>Indian wedding ceremonies are  joyful and festive, and colorful outfits are highly encouraged! To assist you in selecting the perfect attire, our <a className="accordian-link" href="/wardrobe">Wardrobe Planner</a> is designed to provide insights into the various wedding themes and offers recommendations for preferred colors to consider.  
+        <p>Indian wedding ceremonies are  joyful and festive, and colorful outfits are highly encouraged! To assist you in selecting the perfect attire, our <a className="accordian-link" href="/pdf/wardrobe-planner.pdf">Wardrobe Planner</a> is designed to provide insights into the various wedding themes and offers recommendations for preferred colors to consider.  
         
         </p><p>
         
