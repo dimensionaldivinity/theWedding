@@ -231,7 +231,9 @@ Today, the Varmala, or the ceremony of garlands, marks the first ritual that the
             <p className="paragraph-writeup" align="justify">
             
 
-It's a beautiful tradition that underscores the significance of choice and mutual commitment in the journey of matrimony. Varmala ceremony will take place at La Roma Gardenia, 5th December 6.30pm. </p>
+It's a beautiful tradition that underscores the significance of choice and mutual commitment in the journey of matrimony.  </p><br />
+            
+            <p className="paragraph-writeup" align="justify">Varmala ceremony will take place at La Roma Gardenia, 5th December 6.30pm.</p>
             <a href="/pheras">
             <button className="btn-custom">Pheras and Muhurtham</button>
             </a>

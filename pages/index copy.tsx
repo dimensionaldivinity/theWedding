@@ -679,9 +679,9 @@ const index: React.FC<indexProps> = ({}) => {
           </section>
           <section className="section-socials">
             <h1 className="heading-1">
-              <span>Dont be a stranger!</span> <small>👋</small>
+              <span>If you need to reach us!</span> <small>👋</small>
             </h1>
-            <p className="paragraph">come have a chat</p>
+            <p className="paragraph">here is how to contact us</p>
             <div className="section-socials--links">
               <a
                 href="mailto:lmarriesp@gmail.com"
@@ -698,12 +698,7 @@ const index: React.FC<indexProps> = ({}) => {
                 Call Us
               </a>
               
-              <a
-                href="/new"
-               
-              >
-                📸 Instagram
-              </a>
+             
             </div>
           </section>
         </main>

@@ -368,31 +368,37 @@ Check out: 11 Am (6th December, 2023)
             
           </section>
          
-          <section className="section-contact">
-            
-          <h1 className="heading-1">
-              <span>Get in touch</span> <small>👋</small>
+         
+          <section className="section-socials">
+            <h1 className="heading-1">
+              <span>If you need to reach us!</span> <small>👋</small>
             </h1>
-           
+            <p className="paragraph">here is how to contact us</p>
             <div className="section-socials--links">
-              <a className="accordian-contact"
+              <a
                 href="mailto:lmarriesp@gmail.com"
                 rel="noopener"
                 target="_blank"
               >
-                E-mail
+                📧 E-mail
               </a>
-              <a className="accordian-contact"
+              <a
+                href="tel:+917003664695"
+                rel="noopener"
+                target="_blank"
+              >
+               📞 Lavneeta
+              </a>
+              <a
                 href="tel:+918383048570"
                 rel="noopener"
                 target="_blank"
               >
-                Call Us
+               📞 Prasad
               </a>
               
-             
-            </div>
             
+            </div>
           </section>
           
         </main>

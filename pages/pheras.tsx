@@ -242,10 +242,23 @@ Today, the Varmala, or the ceremony of garlands, marks the first ritual that the
             <p className="paragraph-writeup" align="justify">
             
 
-It's a beautiful tradition that underscores the significance of choice and mutual commitment in the journey of matrimony. Varmala ceremony will take place at La Roma Gardenia, 5th December 6.30pm. </p>
-            <a href="/">
-            <button className="btn-custom">Take me home</button>
+It's a beautiful tradition that underscores the significance of choice and mutual commitment in the journey of matrimony.  </p>
+<br />
+            <p className="paragraph-writeup" align="justify">
+Phera ceremony will take place while the wedding ceremony is going on at the time of the muhurtham at 4:30am, on 6th December, at La Roma Gardenia. The wedding ceremony would itself start at about 3:00 AM</p>
+           <div>
+            <span>
+           <a href="/">
+            <button className="btn-custom">Take me back</button>
             </a>
+            <a href="/contact">
+            <button className="btn-custom">Fill your travel details</button>
+            </a>
+            <a href="/faq">
+            <button className="btn-custom">take me to the F.A.Q. section</button>
+            </a>
+            </span>
+           </div>
               </div>
               {/* <a
                 data-scroll-to
