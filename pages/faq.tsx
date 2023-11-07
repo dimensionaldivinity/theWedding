@@ -259,8 +259,7 @@ answers.forEach((event) => {
   
       <div class="accordion__answer"> 
         <p> 
-        Some close family members and guests who need special assistance will be staying at the wedding venue at Le Roma Gardenia along with the Bride, Groom and their families. All other non-residential guests will stay in <a className="accordian-link" href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA">Clarion Hotel</a> in Yelahanka. This hotel is approximately 6-7 minutes away from the wedding venue. The hotel has been booked for our guests for 2 nights, that is 4th and 5th December. The room charges have been covered for your convenience, but if you need any extra room services, we kindly ask you to settle those charges individually at the time of check-out.
-</p>
+        Our accommodation is arranged across two locations. Some of our family members will be staying at the wedding venue at Le Roma Gardenia along with the Bride, Groom and their parents. All other family members and guests who are traveling in from outside Bangalore will stay in <a className="accordian-link" href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA">Clarion Hotel</a> in Yelahanka. This hotel is approximately 6-7 minutes away from the wedding venue. The hotel has been booked for our guests for 2 nights, that is 4th and 5th December. The room charges have been covered for your convenience, but if you need any extra room services, we kindly ask you to settle those charges individually at the time of check-out.</p>
 <p>
 Check in: 12 PM (4th December, 2023)
 <br />
@@ -297,7 +296,7 @@ Check out: 11 Am (6th December, 2023)
   
       </motion.div> 
       <div class="accordion__answer"> 
-        <p>Upon your arrival at Kempegowda International Airport, dedicated transportation will be in place to convey you to your hotel. Furthermore, there will be designated vehicles operating between the hotel and the wedding venue, ensuring your convenience and timely arrivals as per the wedding event schedule.</p> 
+        <p>Upon your arrival at Kempegowda International Airport or the Bangalore Train Station, dedicated transportation will be in place to convey you to your hotel. Furthermore, there will be designated vehicles operating between the hotel and the wedding venue, ensuring your convenience and timely arrivals as per the wedding event schedule.</p> 
         
         <p>Please note that these cars have been exclusively reserved to facilitate transportation between the hotel, the wedding venue, and the airport only. They will not be available for personal use. Your cooperation in this matter is greatly appreciated.</p>
       </div> 
