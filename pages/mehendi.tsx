@@ -223,8 +223,10 @@ const index: React.FC<indexProps> = ({}) => {
             </p>
             <br />
             <p className="paragraph-writeup" align="justify">
-            The origins of mehendi and its symbolism in Indian weddings are both intriguing and beautiful. The idea of bringing people together over intricate henna designs, laughter, music, and games adds a heartwarming touch to the celebration. Mehendi ceremony will take place at La Roma Gardenia, 4th December 1pm onwards. 
+            The origins of mehendi and its symbolism in Indian weddings are both intriguing and beautiful. The idea of bringing people together over intricate henna designs, laughter, music, and games adds a heartwarming touch to the celebration. 
             </p>
+            <br />
+            <p className="paragraph-writeup" align="justify">Mehendi ceremony will take place at La Roma Gardenia, 4th December 1pm onwards. </p>
             <a href="/sangeet">
             <button className="btn-custom">Sangeet</button>
             </a>
@@ -280,61 +282,7 @@ const index: React.FC<indexProps> = ({}) => {
           {/* <p className="about-text">
             Hello! 👋, Write some personal stuff here maye? <br /> 
           </p> */}
-          <section id="sectionProjects" className="section-projects">
-            
-            
 
-            {/* <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">SANGEET</h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="webp/sangeet.webp" alt="sangeet" />
-                <img src="webp/sangeet-2.webp" alt="sangeet" />
-              </div>
-              <div className="project-card__right">
-                
-              <a
-                  className="project-card__link"
-                >
-                  Get ready to put on your dancing shoes
-                </a>
-                
-                <h2
-                  data-scroll
-                  data-scroll-offset="35%"
-                  data-scroll-repeat={true}
-                  data-scroll-class="safarika-anim"
-                  className="heading-2"
-                ><br/>
-                  Indo-Western, Shimmer & Shine
-                </h2>
-               
-               
-              </div>
-            </div> */}
-
-            
-
-
-            
-            
-
-            <div className="project-card-peacock">
-              <div>
-                <img src="/webp/untitled.webp"></img>
-                <div><img></img></div>
-              </div>
-
-            </div>
-
-            
-
-
-          </section>
           
           {/* <section className="section-contact">
             <h1 className="heading-1">

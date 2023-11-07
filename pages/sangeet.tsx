@@ -222,7 +222,9 @@ const index: React.FC<indexProps> = ({}) => {
               The word 'Sangeet' translates from Sanskrit to 'sung together', and is also used to describe a celebratory event during an Indian wedding. Historically, the sangeet ceremony was a female-only event that was organized by the ladies of the bride and groom's families to celebrate the bride a few days before the main wedding ceremony. These songs often conveyed important feelings and emotions for the bride to be, for example, alluding to the bride’s dreams and hopes as she leaves her father’s home to set up her own, the pain parents feel when bidding their daughter farewell, and on a more lighter note, ’tips and tricks’ for the bride to enchant and enamour her husband to be. More recently, sangeet ceremony has evolved into a more gregarious affair, often seen as a musical night, a celebration of the union of not only the couple but the bonding of both families. The word 'sangeet' is synonymous with the word 'song’ and thus the ceremony involves singing and dancing with the couple and their family members and friends to celebrate the onset of their new journey together. We fully expect you to come with your dancing shoes and join us in shaking a leg or two! </p>
             <br />
             <p className="paragraph-writeup" align="justify">
-            The evolution of the sangeet ceremony from a women-only gathering to a lively, musical night celebrating the union of families is a testament to the evolving traditions in Indian weddings. Sangeet ceremony will take place at La Roma Gardenia, 4th December 6pm onwards. </p>
+            The evolution of the sangeet ceremony from a women-only gathering to a lively, musical night celebrating the union of families is a testament to the evolving traditions in Indian weddings.  </p>
+            <br />
+            <p className="paragraph-writeup" align="justify">Sangeet ceremony will take place at La Roma Gardenia, 4th December 6pm onwards.</p>
             <a href="/haldi">
             <button className="btn-custom" 
             href = "/haldi">Haldi & Mangalasnanam</button>

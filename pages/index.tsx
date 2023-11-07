@@ -218,13 +218,13 @@ const index: React.FC<indexProps> = ({}) => {
                 <span>at the wedding.</span>
                 
               </div>
-              <a
+              {/* <a
                 data-scroll-to
                 className="header__hero--cta"
                 href="#sectionProjects"
               >
                 There is a whole list of events :P
-              </a>
+              </a> */}
             </div>
           </header>
           <div className="header__footer">
@@ -307,12 +307,14 @@ const index: React.FC<indexProps> = ({}) => {
           </div>
         </div>
         <main className="container">
-          <p className="about-text">
-            Hello! 👋, Write some personal stuff here maye? <br /> 
+          <p className="about-text" align="justify-left">
+          Welcome to the celebration of a love and friendship! We are thrilled to invite you to join us as we embark on this beautiful journey together. This website is built to help you discover all the details, including significance of each ceremony and FAQs for your convenience. Your presence and support means the world to us, and we can't wait to share this joyous occasion with you.
+             <br /> 
+             
           </p>
           <section id="sectionProjects" className="section-projects">
             <h1 className="heading-1">
-              <span>And here it begins </span> <small>💼</small>
+              <span>And here it begins, Welcome </span> <small>🙏</small>
             </h1>
             <p className="paragraph">
               The what? The When? The where?
@@ -639,10 +641,10 @@ const index: React.FC<indexProps> = ({}) => {
 
           <section className="section-contact">
             <h1 className="heading-1">
-              <span>If you have a moment </span> <small>🙏</small>
+              <span>Please take a moment to </span> <small>🙏</small>
             </h1>
             <h2 className="section-contact__h2">
-              Please fill this &nbsp;
+               fill this &nbsp;
               <a className= "section-contact__btn" href="/contact"> form &nbsp;</a>
               &nbsp; to help us facilitate your commute in Bangalore. See you very soon.
               
@@ -650,9 +652,9 @@ const index: React.FC<indexProps> = ({}) => {
           </section>
           <section className="section-socials">
             <h1 className="heading-1">
-              <span>Dont be a stranger!</span> <small>👋</small>
+              <span>If you need to reach us!</span> <small>👋</small>
             </h1>
-            <p className="paragraph">come have a chat</p>
+            <p className="paragraph">here is how to contact us</p>
             <div className="section-socials--links">
               <a
                 href="mailto:lmarriesp@gmail.com"
@@ -662,19 +664,21 @@ const index: React.FC<indexProps> = ({}) => {
                📧 E-mail
               </a>
               <a
+                href="tel:+917003664695"
+                rel="noopener"
+                target="_blank"
+              >
+               📞 Lavneeta
+              </a>
+              <a
                 href="tel:+918383048570"
                 rel="noopener"
                 target="_blank"
               >
-               📞 Call Us
+               📞 Prasad
               </a>
               
-              <a
-                href="/new"
-               
-              >
-                📸 Instagram
-              </a>
+             
             </div>
           </section>
         </main>

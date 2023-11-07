@@ -225,7 +225,11 @@ const index: React.FC<indexProps> = ({}) => {
             Haldi holds such a special place for many reasons. As many of you might know, yellow is a colour that is associated with spring, happiness and new beginnings. However, the act of putting haldi has deeper significance. Some texts suggest it acts as an evil eye, to ward off evil spirits from affecting the bride and the groom. The colour of Haldi is also considered auspicious. The auspiciousness of this ingredient and its colour ushers in a life of prosperity for the couple, who are starting off their new life together. This is why in many cultures, the bride and groom wear yellow clothes on their wedding day as well. Finally, for beauty, because in the olden days, when cosmetic beauty treatments were not available, Indians had their own natural beauty secrets to ensure that a couple looked radiant and wonderful on their wedding day. Haldi is known to have properties that leave the skin fair and glowing. Haldi being a powerful antiseptic, also serves to purify and cleanse the body. Interestingly, curcumin, the key ingredient in turmeric, is said to have antidepressant properties and thus helps to ward away pre-wedding jitters! </p>
             <br />
             <p className="paragraph-writeup" align="justify">
-            The Haldi ceremony's historical and cultural significance, along with its positive connotations, is truly heartwarming. From its role in warding off evil spirits to its association with new beginnings and radiant skin, Haldi holds a special place in Indian wedding customs. Haldi ceremony will take place at La Roma Gardenia, 5th December 10am onwards. 
+            The Haldi ceremony's historical and cultural significance, along with its positive connotations, is truly heartwarming. From its role in warding off evil spirits to its association with new beginnings and radiant skin, Haldi holds a special place in Indian wedding customs.  
+            </p>
+            <br />
+            <p className="paragraph-writeup" align="justify">
+            Haldi ceremony, followed by the Mangalasnanam ceremony will take place at La Roma Gardenia, 5th December 10am onwards.
             </p>
             <a href="/varmala">
             <button className="btn-custom">Varmala</button>
