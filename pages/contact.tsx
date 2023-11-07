@@ -163,7 +163,7 @@ useEffect(() => {
             name="apple-mobile-web-app-status-bar-style"
             content="#10101A"
           />
-          <title>L+P Wedding website</title>
+          <title>L+P Wedding</title>
           <meta
             name="description"
             content="L + P Wedding"
