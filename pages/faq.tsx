@@ -404,7 +404,7 @@ Check out: 11 Am (6th December, 2023)
                   href="https://maps.app.goo.gl/KkN7GJcDGo2CjqJX8"
                   className="contact-card-anchor"
                 >
-                  View the location on maps
+                  Show the map
                 </a>
                 
               </div>
@@ -433,7 +433,7 @@ Check out: 11 Am (6th December, 2023)
                   href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA"
                   className="contact-card-anchor"
                 >
-                  View the location on maps
+                  Show the map
                 </a>
                 
               </div>
