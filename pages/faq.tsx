@@ -248,7 +248,9 @@ answers.forEach((event) => {
   
       </motion.div> 
       <div class="accordion__answer"> 
-        <p>Le Roma Gardenia is a beautiful resort with lovely open garden spaces, a charming courtyard, a pool area, a welcoming clubhouse, and elegant residential blocks. Additionally, the resort offers a cozy lounge area, a well-stocked library, a snooker table for entertainment, and a movie theater for your leisure. If you find a moment amidst the joyous wedding celebrations, a leisurely stroll around the resort will allow you to relish these amenities. It's worth noting that all wedding events will be held in the scenic outdoor gardens and the delightful courtyard area.</p> 
+        <p>Le Roma Gardenia is a beautiful resort with lovely open garden spaces, a charming courtyard, a pool area, a welcoming clubhouse, and elegant residential blocks. Additionally, the resort offers a cozy lounge area, a well-stocked library, a snooker table for entertainment, and a movie theater for your leisure. If you find a moment amidst the joyous wedding celebrations, a leisurely stroll around the resort will allow you to relish these amenities. It's worth noting that all wedding events will be held in the scenic outdoor gardens and the delightful courtyard area.
+        <br />
+Location details can be found below.</p> 
       </div> 
     </motion.div> 
   
@@ -259,7 +261,9 @@ answers.forEach((event) => {
   
       <div class="accordion__answer"> 
         <p> 
-        Our accommodation is arranged across two locations. Some of our family members will be staying at the wedding venue at Le Roma Gardenia along with the Bride, Groom and their parents. All other family members and guests who are traveling in from outside Bangalore will stay in <a className="accordian-link" href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA">Clarion Hotel</a> in Yelahanka. This hotel is approximately 6-7 minutes away from the wedding venue. The hotel has been booked for our guests for 2 nights, that is 4th and 5th December. The room charges have been covered for your convenience, but if you need any extra room services, we kindly ask you to settle those charges individually at the time of check-out.</p>
+        Our accommodation is arranged across two locations. Some of our family members will be staying at the wedding venue at Le Roma Gardenia along with the Bride, Groom and their parents. All other family members and guests who are traveling in from outside Bangalore will stay in <a className="accordian-link" href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA">Clarion Hotel</a> in Yelahanka. This hotel is approximately 6-7 minutes away from the wedding venue. The hotel has been booked for our guests for 2 nights, that is 4th and 5th December. The room charges have been covered for your convenience, but if you need any extra room services, we kindly ask you to settle those charges individually at the time of check-out.
+        <br />
+Location details can be found below.</p>
 <p>
 Check in: 12 PM (4th December, 2023)
 <br />
@@ -365,6 +369,82 @@ Check out: 11 Am (6th December, 2023)
              {/* scss form */}
 
             
+          </section>
+
+          <section id="sectionProjects" className="section-projects">
+            
+          
+
+            
+            <div>
+            
+            <div>
+            <h1 className="heading-1">
+              <span>Venue & Hotel Details</span>
+            </h1>
+            <div className="project-card">
+              <div className="project-card__left">
+                <h4 className="heading-4">PHERAS & MUHURTHAM</h4>
+              </div>
+              
+              <div className="project-card__right">
+                <h2
+                  data-scroll
+                  data-scroll-offset="35%"
+                  data-scroll-repeat={true}
+                  // data-scroll-class="lp-anim"
+                  className="heading-2"
+                >
+                  Le Roma Gardenia
+                  <br /> IVRI Road, Bangalore
+                </h2>
+                
+
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://maps.app.goo.gl/KkN7GJcDGo2CjqJX8"
+                  className="contact-card-anchor"
+                >
+                  View the location on maps
+                </a>
+                
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-card__left">
+                <h4 className="heading-4">PHERAS & MUHURTHAM</h4>
+              </div>
+              
+              <div className="project-card__right">
+                <h2
+                  data-scroll
+                  data-scroll-offset="35%"
+                  data-scroll-repeat={true}
+                  // data-scroll-class="lp-anim"
+                  className="heading-2"
+                >
+                  Hotel Clarion
+                  <br /> Attur Layout, Yelahanka, 
+                  <br />Bangalore
+                </h2>
+                
+
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA"
+                  className="contact-card-anchor"
+                >
+                  View the location on maps
+                </a>
+                
+              </div>
+            </div>
+             
+            </div>
+            </div>
           </section>
          
          
