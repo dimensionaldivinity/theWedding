@@ -366,6 +366,82 @@ Check out: 11 Am (6th December, 2023)
 
             
           </section>
+
+          <section id="sectionProjects" className="section-projects">
+            
+          
+
+            
+            <div>
+            
+            <div>
+            <h1 className="heading-1">
+              <span>Venue & Hotel Details</span>
+            </h1>
+            <div className="project-card">
+              <div className="project-card__left">
+                <h4 className="heading-4">PHERAS & MUHURTHAM</h4>
+              </div>
+              
+              <div className="project-card__right">
+                <h2
+                  data-scroll
+                  data-scroll-offset="35%"
+                  data-scroll-repeat={true}
+                  data-scroll-class="lp-anim"
+                  className="heading-2"
+                >
+                  Le Roma Gardenia
+                  <br /> IVRI Road, Bangalore
+                </h2>
+                
+
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://maps.app.goo.gl/KkN7GJcDGo2CjqJX8"
+                  className="contact-card-anchor"
+                >
+                  View the location on maps
+                </a>
+                
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-card__left">
+                <h4 className="heading-4">PHERAS & MUHURTHAM</h4>
+              </div>
+              
+              <div className="project-card__right">
+                <h2
+                  data-scroll
+                  data-scroll-offset="35%"
+                  data-scroll-repeat={true}
+                  data-scroll-class="lp-anim"
+                  className="heading-2"
+                >
+                  Hotel Clarion
+                  <br /> Attur Layout, Yelahanka, 
+                  <br />Bangalore
+                </h2>
+                
+
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://maps.app.goo.gl/XdLEdxSfqu7UNemYA"
+                  className="contact-card-anchor"
+                >
+                  View the location on maps
+                </a>
+                
+              </div>
+            </div>
+             
+            </div>
+            </div>
+          </section>
          
          
           <section className="section-socials">
