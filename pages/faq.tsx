@@ -383,9 +383,7 @@ Check out: 11 Am (6th December, 2023)
               <span>Venue & Hotel Details</span>
             </h1>
             <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">PHERAS & MUHURTHAM</h4>
-              </div>
+             
               
               <div className="project-card__right">
                 <h2
@@ -413,9 +411,7 @@ Check out: 11 Am (6th December, 2023)
             </div>
 
             <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">PHERAS & MUHURTHAM</h4>
-              </div>
+              
               
               <div className="project-card__right">
                 <h2
